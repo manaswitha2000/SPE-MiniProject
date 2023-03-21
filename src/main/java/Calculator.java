@@ -38,35 +38,38 @@ import java.lang.Math;
            System.out.print("5. Exit\n\n");
            System.out.print("Enter Your Choice : ");
            choice = scan.next().charAt(0);
-			 switch (choice) {
-				 case '1' -> {
-					 System.out.print("Enter One Number : ");
-					 a = scan.nextFloat();
-					 res = sqrt(a);
-					 System.out.print("Result = " + res);
-				 }
-				 case '2' -> {
-					 System.out.print("Enter One Number : ");
-					 a = scan.nextFloat();
-					 res = factorial(a);
-					 System.out.print("Result = " + res);
-				 }
-				 case '3' -> {
-					 System.out.print("Enter One Number : ");
-					 a = scan.nextFloat();
-					 res = log(a);
-					 System.out.print("Result = " + res);
-				 }
-				 case '4' -> {
-					 System.out.print("Enter Two Number : ");
-					 a = scan.nextFloat();
-					 b = scan.nextFloat();
-					 res = power(a,b);
-					 System.out.print("Result = " + res);
-				 }
-				 case '5' -> System.exit(0);
-				 default -> System.out.print("Wrong Choice!!!");
-			 }
+		   if (choice <= 5) {
+			   if(choice == '1'){
+				   System.out.print("Enter One Number : ");
+				   a = scan.nextFloat();
+				   res = sqrt(a);
+				   System.out.print("Result = " + res);
+			   }
+			   if(choice == '2') {
+				   System.out.print("Enter One Number : ");
+				   a = scan.nextFloat();
+				   res = factorial(a);
+				   System.out.print("Result = " + res);
+			   }
+			   if(choice == '3'){
+				   System.out.print("Enter One Number : ");
+				   a = scan.nextFloat();
+				   res = log(a);
+				   System.out.print("Result = " + res);
+			   }
+			   if(choice == '4'){
+				   System.out.print("Enter Two Number : ");
+				   a = scan.nextFloat();
+				   b = scan.nextFloat();
+				   res = power(a, b);
+				   System.out.print("Result = " + res);
+			   }
+			   if(choice == '5')
+				   System.exit(0);
+		   }
+		        else {
+			      System.out.print("Wrong Choice!!!");
+		  	 }
 																	            System.out.print("\n---------------------------------------\n");
 	}while(choice != 5);
     }
