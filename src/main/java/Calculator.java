@@ -80,15 +80,15 @@ public class Calculator
 	}
 
 	public static float log(float a){
-		float res = (float)Math.log(a)
-		logger.info("Natural log of - " + x + " is - " + res);
-		return res;
+		float ret = (float)Math.log(a)
+		logger.info("Natural log of - " + x + " is - " + ret);
+		return ret;
 	}
 
 	public static float power(float a, float b){
-		float res = (float)Math.pow(a, b)
-		logger.info("power of - " + x + ", " + b + " is - " + res);	
-		return res;
+		float po = (float)Math.pow(a, b)
+		logger.info("power of - " + x + ", " + b + " is - " + po);	
+		return po;
 	}
 }
 
