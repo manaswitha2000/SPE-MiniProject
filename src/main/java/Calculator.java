@@ -65,76 +65,30 @@ public class Calculator
 		scan.close();
 	}
 
-	/*public static double squareroot(float x)
-	{
-		if(x < 0)
-		{
-			logger.info("Error - Negative Number");
-		}
-		// logger.info();
-		double res = 0;
-		res = Math.sqrt(x);
-		logger.info("SquareRoot of - " + x + " is - " + res);
-		return res;
-	}
-
-	public static long factorial(float x)
-	{
-		if(x < 0){
-			logger.error("Error - Negative Number");
-			return -1;
-		}
-		// logger.info();
-		long res = 1;
-		for(int i=1; i<=x; i++)
-		{
-			res *= i;
-		}
-		logger.info("Factorial of - " + x + " is - " + res);
-		return res;
-	}
-
-	public static double lnx(float x)
-	{
-		if(x < 0)
-		{
-			logger.error("Error - Negative Number");
-		}
-		// logger.info();
-		double ret = Math.log(x);
-		logger.info("Natural log of - " + x + " is - " + ret);
-		return ret;
-	}
-
-	public static long power(float x, float b)
-	{
-		// logger.info();
-		long res = 1;
-		for(int i=1; i<=b; i++)
-		{
-			res *= x;
-		}
-		logger.info("power of - " + x + ", " + b + " is - " + res);
-		return res;
-	}*/
-
 	public static float sqrt(float a){
-		return (float) Math.sqrt(a);
+		float res = (float) Math.sqrt(a);
+		logger.info("SquareRoot of - " + x + " is - " + res);
+		return res;	
 	}
 	public static float factorial(float a){
 		float fact = (float)1.0;
 		for (int i = 2; i <= a; i++) {
 			fact = fact * i;
 		}
+		logger.info("Factorial of - " + x + " is - " + fact);
 		return fact;
 	}
 
 	public static float log(float a){
-		return (float)Math.log(a);
+		float res = (float)Math.log(a)
+		logger.info("Natural log of - " + x + " is - " + res);
+		return res;
 	}
 
 	public static float power(float a, float b){
-		return (float)Math.pow(a, b);
+		float res = (float)Math.pow(a, b)
+		logger.info("power of - " + x + ", " + b + " is - " + res);	
+		return res;
 	}
 }
 
