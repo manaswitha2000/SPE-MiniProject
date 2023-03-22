@@ -67,7 +67,7 @@ public class Calculator
 
 	public static float sqrt(float a){
 		float res = (float) Math.sqrt(a);
-		logger.info("SquareRoot of - " + x + " is - " + res);
+		logger.info("SquareRoot of - " + a + " is - " + res);
 		return res;	
 	}
 	public static float factorial(float a){
@@ -75,19 +75,19 @@ public class Calculator
 		for (int i = 2; i <= a; i++) {
 			fact = fact * i;
 		}
-		logger.info("Factorial of - " + x + " is - " + fact);
+		logger.info("Factorial of - " + a + " is - " + fact);
 		return fact;
 	}
 
 	public static float log(float a){
 		float ret = (float)Math.log(a);
-		logger.info("Natural log of - " + x + " is - " + ret);
+		logger.info("Natural log of - " + a + " is - " + ret);
 		return ret;
 	}
 
 	public static float power(float a, float b){
 		float po = (float)Math.pow(a, b);
-		logger.info("power of - " + x + ", " + b + " is - " + po);	
+		logger.info("power of - " + a + ", " + b + " is - " + po);	
 		return po;
 	}
 }
