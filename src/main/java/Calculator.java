@@ -1,8 +1,5 @@
-import java.util.Scanner;
-
 import java.util.*;
 import java.lang.Math.*;
-
 import java.util.InputMismatchException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,6 +8,33 @@ public class Calculator
 {
 	private static final Logger logger = LogManager.getLogger(Calculator.class);
 	static Calculator calc = new Calculator();
+	
+	public static float sqrt(float a){
+		float res = (float) Math.sqrt(a);
+		logger.info("SquareRoot of - " + a + " is - " + res);
+		return res;	
+	}
+	public static float factorial(float a){
+		float fact = (float)1.0;
+		for (int i = 2; i <= a; i++) {
+			fact = fact * i;
+		}
+		logger.info("Factorial of - " + a + " is - " + fact);
+		return fact;
+	}
+
+	public static float log(float a){
+		float ret = (float)Math.log(a);
+		logger.info("Natural log of - " + a + " is - " + ret);
+		return ret;
+	}
+
+	public static float power(float a, float b){
+		float po = (float)Math.pow(a, b);
+		logger.info("power of - " + a + ", " + b + " is - " + po);	
+		return po;
+	}
+	
 	public static void main(String args[])
 	{
 		float a, b;
@@ -65,30 +89,5 @@ public class Calculator
 		scan.close();
 	}
 
-	public static float sqrt(float a){
-		float res = (float) Math.sqrt(a);
-		logger.info("SquareRoot of - " + a + " is - " + res);
-		return res;	
-	}
-	public static float factorial(float a){
-		float fact = (float)1.0;
-		for (int i = 2; i <= a; i++) {
-			fact = fact * i;
-		}
-		logger.info("Factorial of - " + a + " is - " + fact);
-		return fact;
-	}
-
-	public static float log(float a){
-		float ret = (float)Math.log(a);
-		logger.info("Natural log of - " + a + " is - " + ret);
-		return ret;
-	}
-
-	public static float power(float a, float b){
-		float po = (float)Math.pow(a, b);
-		logger.info("power of - " + a + ", " + b + " is - " + po);	
-		return po;
-	}
 }
 
