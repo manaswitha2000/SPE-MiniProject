@@ -1,0 +1,9 @@
+- name: Pull and Run docker image
+  hosts: host_machine
+  tasks:
+
+    - name: Pull Image
+      shell: docker pull manaswitha31/miniproject:latest
+
+    - name: Run the container
+      shell: docker run -i -t --name calculator -d manaswitha31/miniproject
