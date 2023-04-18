@@ -3,7 +3,7 @@
   tasks:
 
     - name: Pull Image
-      shell: docker pull manaswitha31/miniproject:latest
+      shell: docker pull manaswitha2000/miniproject:latest
 
     - name: Run the container
-      shell: docker run -i -t --name calculator -d manaswitha31/miniproject
+      shell: docker run -i -t --name calculator -d manaswitha2000/miniproject
